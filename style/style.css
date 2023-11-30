@@ -1,4 +1,52 @@
-p {
-    font-family: 'Roboto Mono', monospace;
-    color: white;
+/* COLOUR PALETTE:
+NIGHT: #03120E
+EERIE BLACK: #1A1D1A
+DARK SLATE GREY: #26413C
+CHARCOAL: #3E505B
+CAMBRDIBE BLUE: #8AB0AB // #a9ccc8
+*/
+
+
+
+body {
+    background-color: #03120e !important;
 }
+
+body p,
+h1,
+i,
+h3,
+h4,
+h2 {
+    
+    font-family: 'Roboto Mono', sans-serif ;
+    color: #a9ccc8 !important;
+}
+
+.left {
+    padding-top: 80px;
+    padding-left: 220px;
+    padding-right: 15px;
+    position:fixed;
+    width:50%;
+    height: 100%;
+}
+
+.right { 
+    padding-top: 80px;
+    padding-left: 15px;
+    padding-right: 220px;
+    float:right;
+    width:50%; 
+    height: 100%;
+}
+
+.bottom-navbar{
+    position:fixed;
+    bottom: 0;
+    margin-bottom: 25px;
+}
+
+svg:hover {
+    fill: red;
+  }
