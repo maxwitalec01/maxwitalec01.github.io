@@ -99,8 +99,7 @@
       <center><h4><u>Work Experience</u></h4></center>
       <br>
       <div class="list_work_experiences">
-        <a href="https://sig.com/" target="_blank" rel="noopener noreferrer">
-          <div class="work_experience">
+          <div class="work_experience" onclick="sig_website()">
             <b>
               <p>
                 Infrastructure Engineer •  SIG
@@ -119,9 +118,43 @@
               Collaborated with multiple teams throughout the internship to develop the group and personal project
             </p>
           </div>
-        </a>
+          <div class="list_work_experiences">
+            <div class="work_experience" onclick="sig_website()">
+              <b>
+                <p>
+                  System Administrator • Web World Ireland
+                </p>
+              </b>
+              <p>
+                March 2018 - January 2023 || September 2023 - Present
+              </p>
+              <p>
+                Advised level 2 and level 3 engineers on potential process improvements to increase support quality and
+                expedite ticket fulfilment. Configured hardware, devices and software to be set up for employees and clients. In charge of organizing small to medium scale jobs which help the efficiency and performance of the
+                company. Documented all ticket resolutions and drafted troubleshooting guides for each team with images, descriptions
+                and strategies. Managed work tickets, prioritizing urgent needs and communicating plans with all customers within 24 hours
+              </p>
+            </div>
       </div>
-
+      <center><h4><u>Projects</u></h4></center>
+      <div class="list_work_experiences">
+        <div class="work_experience" onclick="sig_website()">
+          <b>
+            <p>
+              System Administrator • Web World Ireland
+            </p>
+          </b>
+          <p>
+            March 2018 - January 2023 || September 2023 - Present
+          </p>
+          <p>
+            Advised level 2 and level 3 engineers on potential process improvements to increase support quality and
+            expedite ticket fulfilment. Configured hardware, devices and software to be set up for employees and clients. In charge of organizing small to medium scale jobs which help the efficiency and performance of the
+            company. Documented all ticket resolutions and drafted troubleshooting guides for each team with images, descriptions
+            and strategies. Managed work tickets, prioritizing urgent needs and communicating plans with all customers within 24 hours
+          </p>
+        </div>
+    </div>
     </div>
   </div>
 
@@ -158,6 +191,10 @@
         btn.classList.remove("active");
         modal.style.display = "none";
       }
+    }
+
+    function sig_website(i){
+      window.open("https://www.sig.com/")
     }
   </script>
 </body>
