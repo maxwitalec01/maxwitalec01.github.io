@@ -27,7 +27,7 @@ h2 {
     padding-right: 15px;
     position:fixed;
     width:50%;
-    height: 100%;
+
 }
 
 .right { 
@@ -36,7 +36,7 @@ h2 {
     padding-right: 220px !important;
     float:right;
     width:50%; 
-    height: 100%;
+
 }
 
 .bottom-navbar{
@@ -151,4 +151,59 @@ span {
 
 a {
     text-decoration: none !important;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+      padding-top: 80px;
+    }
+  
+    .left,
+    .right {
+      width: 100%;
+      max-height: none; /* Remove max-height for mobile */
+      overflow-y: auto; /* Enable scrolling if content exceeds the height */
+      position: relative; /* Make both divs relative for proper stacking */
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  
+    .right {
+      padding-right: 15px !important;
+      float: none; /* Remove float for proper stacking */
+    }
+  
+    .bottom-navbar {
+        text-align: center;
+      position: static;
+      margin-bottom: 0;
+      padding-top: 30px ;
+    }
+
+    .contact-button{
+        width: 100%;
+        margin: 0 auto;
+    }
+  
+    .modal-content {
+      width: 90% !important;
+    }
+  
+    .left {
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative; /* Set left div back to relative position */
+      top: 0; /* Remove top position for proper stacking */
+      z-index: 1; /* Ensure it appears on top of the right div */
+    }
+
+  }
+
+  
+
+@media screen and (max-width: 600px) {
+  .modal-content {
+    width: 90% !important;
+  }
 }
