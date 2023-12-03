@@ -154,7 +154,7 @@ a {
 }
 
 
-@media screen and (max-width: 978px) {
+@media screen and (max-width: 1024px) {
     body {
       padding-top: 80px;
     }
