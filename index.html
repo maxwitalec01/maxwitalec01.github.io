@@ -126,7 +126,7 @@
                 </p>
               </b>
               <p>
-                March 2018 - January 2023 || September 2023 - Present
+                March 2018 - January 2023 <br> September 2023 - Present
               </p>
               <p>
                 Advised level 2 and level 3 engineers on potential process improvements to increase support quality and
@@ -139,21 +139,61 @@
       <center><h4><u>Projects</u></h4></center>
       <br>
       <div class="list_work_experiences">
-        <div class="work_experience" onclick="">
+        <div class="work_experience" onclick="email_setting_website()">
           <b>
             <p>
-              System Administrator • Web World Ireland
+              Email Setting Finder 📧
             </p>
           </b>
           <p>
-            March 2018 - January 2023 || September 2023 - Present
+            Developed this web application while working for Web World Ireland, as we have a huge amount of clients, 
+            I wanted to automate the process of finding email settings for clients. A user can enter the website
+             and put their email address in to return correct email settings.
           </p>
+          <h5>
+            <span class="badge bg-success">Flask</span>
+            <span class="badge bg-success">cPanel</span>
+            <span class="badge bg-success">Python</span>
+            <span class="badge bg-success">API</span>
+          </h5>
+        </div>
+        <div class="work_experience" onclick="status_page_website()">
+          <b>
+            <p>
+              Network Status Website (WIP) 🛜
+            </p>
+          </b>
           <p>
-            Advised level 2 and level 3 engineers on potential process improvements to increase support quality and
-            expedite ticket fulfilment. Configured hardware, devices and software to be set up for employees and clients. In charge of organizing small to medium scale jobs which help the efficiency and performance of the
-            company. Documented all ticket resolutions and drafted troubleshooting guides for each team with images, descriptions
-            and strategies. Managed work tickets, prioritizing urgent needs and communicating plans with all customers within 24 hours
+            Built a network status page for Web World Ireland which is hosted on Heroku and independent from our data centre to
+            ensure uptime in the unlikely case of down time. It checks each of our servers, checking HTTP, POP3, FTP and uptime. The 
+            website refreshes every 30 seconds with newest updates.
           </p>
+          <h5>
+            <span class="badge bg-success">Flask</span>
+            <span class="badge bg-success">Heroku</span>
+            <span class="badge bg-success">cPanel</span>           
+            <span class="badge bg-success">Redis</span>
+            <span class="badge bg-success">Python</span>
+            <span class="badge bg-success">API</span>
+          </h5>
+        </div>
+        <div class="work_experience" onclick="django_website()">
+          <b>
+            <p>
+              Hotel Booking Website 🏨
+            </p>
+          </b>
+          <p>
+            Hotel booking website built in Django framework. This project was developed as a part of our curriculum in second year and wanted us to demonstrate
+             the knowledge we gained about Django. We decided to take a challenge with setting up a booking system as that aspect was never showed to us and we were 
+             confident we would be able to implement it.
+          </p>
+          <h5>
+            <span class="badge bg-success">Django</span>
+            <span class="badge bg-success">Python</span>
+            <span class="badge bg-success">API</span>
+            <span class="badge bg-success">MySQL</span>
+          </h5>
         </div>
     </div>
     </div>
@@ -201,6 +241,19 @@
     function webworld_website(i){
       window.open("https://webworld.host/")
     }
+
+    function email_setting_website(i){
+      window.open("https://help.webworld.ie/")
+    }
+
+    function status_page_website(i){
+      window.open("http://status.webworld.ie/")
+    }
+
+    function django_website(i){
+      window.open("https://github.com/maxwitalec01/CA2")
+    }
+
   </script>
 </body>
 
