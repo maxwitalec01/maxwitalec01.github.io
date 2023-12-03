@@ -33,7 +33,7 @@ h2 {
 .right { 
     padding-top: 80px;
     padding-left: 15px;
-    padding-right: 220px;
+    padding-right: 220px !important;
     float:right;
     width:50%; 
     height: 100%;
