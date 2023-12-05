@@ -22,7 +22,7 @@ h2 {
 }
 
 .left {
-    padding-top: 80px;
+    padding-top: 45px;
     padding-left: 220px;
     padding-right: 15px;
     position:fixed;
@@ -31,12 +31,12 @@ h2 {
 }
 
 .right { 
-    padding-top: 80px;
+    padding-top: 45px;
     padding-left: 15px;
     padding-right: 220px !important;
     float:right;
-    width:50%; 
-
+    width:50%;
+    height: 100vh !important;
 }
 
 .bottom-navbar{
@@ -50,7 +50,7 @@ svg:hover {
   }
 
 .contact-button {
-    width: 275px;
+    width: 225px;
     font-family: 'Roboto Mono', sans-serif ;
     font-size: 22px;
     background-color: #26413C;
@@ -119,10 +119,18 @@ svg:hover {
     padding-bottom: 55px;
 }
 
+.about_me{
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 10%;
+  margin: 0 auto; /* this is to center the div */
+  
+}
+
 .work_experience{
     padding: 15px;
     text-align: center;
-    width: 102%;
+    width: 100%;
     border-radius: 25px;
     transition-duration: 1s;
     margin: 0 auto; /* this is to center the div */
@@ -142,6 +150,28 @@ svg:hover {
     
 }
 
+.projects{
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  border-radius: 25px;
+  transition-duration: 1s;
+  margin: 0 auto; /* this is to center the div */
+  margin-bottom: 5%;
+  border: 2px solid #3b605a;
+
+}
+
+.projects:hover{ 
+    
+  transition: 0.3s;
+  border-radius: 25px;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(3, 255, 234, 0.19);
+  cursor: pointer;
+  
+}
+
 
 span {
 
@@ -153,6 +183,35 @@ a {
     text-decoration: none !important;
 }
 
+.section {
+  display: none; /* Hide all sections by default */
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-in-out;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 
 @media screen and (max-width: 1024px) {
     body {
@@ -167,6 +226,7 @@ a {
       position: relative; /* Make both divs relative for proper stacking */
       padding-left: 15px;
       padding-right: 15px;
+      height: 100vh ;
     }
   
     .right {
@@ -175,14 +235,13 @@ a {
     }
   
     .bottom-navbar {
-        text-align: center;
+      text-align: center;
       position: static;
-      margin-bottom: 0;
-      padding-top: 30px ;
     }
 
     .contact-button{
-        width: 100%;
+        
+        width: 50%;
         margin: 0 auto;
     }
   
@@ -197,6 +256,30 @@ a {
       top: 0; /* Remove top position for proper stacking */
       z-index: 1; /* Ensure it appears on top of the right div */
     }
+
+    .projects{
+      padding: 15px;
+      text-align: center;
+      width: 102%;
+      border-radius: 25px;
+      transition-duration: 1s;
+      margin: 0 auto; /* this is to center the div */
+      margin-bottom: 3%;
+      border: 2px solid #3b605a;
+      height: 100vh;
+    }
+
+    .work_experience{
+      padding: 15px;
+      text-align: center;
+      width: 102%;
+      border-radius: 25px;
+      transition-duration: 1s;
+      margin: 0 auto; /* this is to center the div */
+      margin-bottom: 3%;
+      border: 2px solid #3b605a;
+  
+  }
 
   }
 

@@ -36,6 +36,23 @@
       <H4>Hello!👋 <br>I'm Max Witalec, a junior software developer focused on building next level applications</h4>
       <br>
       <div>
+
+        <nav class="navbar ">
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="toggleVisibility('about_me')"><button>About Me</button> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="toggleVisibility('work_experience')"><button>Work Experience</button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="toggleVisibility('projects')"><button>Projects</button></a>
+              </li>
+            </ul>
+
+        </nav>
+        
         <button class="contact-button" id="myBtn" type="button">
           Contact me here!
         </button>
@@ -69,92 +86,112 @@
         </div>
       </div>
 
-
-      <div class="bottom-navbar">
-        <a href="https://github.com/maxwitalec01" target="_blank">           
-          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(169, 204, 200, 1)">
+      <div class="bottom-navbar justify-content-between">
+        <a href="https://github.com/maxwitalec01" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"
+            style="fill: rgba(169, 204, 200, 1)">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z">
-              <a href="#">  
+              <a href="#">
             </path>
           </svg>
-          </a>
+        </a>
         <a href="https://www.linkedin.com/in/maxwitalec/" target="_blank">
           <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"
-          style="fill: rgba(169, 204, 200, 1)">
-          <path
-            d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
-          </path>
-        </svg>
+            style="fill: rgba(169, 204, 200, 1)">
+            <path
+              d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
+            </path>
+          </svg>
         </a>
-
       </div>
     </div>
 
     <div class="right">
-      <p class="intro">
-        In 2018, I delved into software engineering, contributing to impactful projects and roles. 
-        Currently a System Administrator at <u>Web World Ireland</u>, I've improved support quality and managed 
-        efficiency-boosting projects. As an Infrastructure Engineer Intern at <u>Susquehanna International Group</u>, 
-        I worked on the development of a time-saving automated 
-        roll call system and worked on a web app for active directory management.
-        <BR><BR>
-        Beyond coding, I'm passionate about Formula 1, music production, and go karting. I look forward to future 
-        challenges and contributions in the dynamic world of software engineering.
-      </p>
-      <center><h4><u>Work Experience</u></h4></center>
-      <br>
-      <div class="list_work_experiences">
-          <div class="work_experience" onclick="sig_website()">
+        <div id="about_me" class="about_me section ">
+          <center>
+            <h4><u>About Me</u></h4>
+          </center>
+          <br>
+          <p class="intro">
+            In 2018, I delved into software engineering, contributing to impactful projects and roles.
+            Currently a System Administrator at <u>Web World Ireland</u>, I've improved support quality and managed
+            efficiency-boosting projects. As an Infrastructure Engineer Intern at <u>Susquehanna International Group</u>,
+            I worked on the development of a time-saving automated
+            roll call system and worked on a web app for active directory management.
+            <BR><BR>
+            Beyond coding, I'm passionate about Formula 1, music production, and go karting. I look forward to future
+            challenges and contributions in the dynamic world of software engineering.
+          </p>
+        </div>
+
+
+      <div id="work_experience" class="list_work_experiences section">
+
+        <center>
+          <h4><u>Work Experience</u></h4>
+        </center>
+        <br>
+        <div class="work_experience" onclick="sig_website()">
+
+          <b>
+            <p>
+              Infrastructure Engineer • SIG <img src="favicon.ico" style="width: 16px; height: 16px;">
+            </p>
+          </b>
+          <p>
+            January 2023 - September 2023
+          </p>
+          <p>
+            Developed an automated roll call system for daily calls as a part of a group project which saved over 60
+            hours
+            a week for the infrastructure department.
+            Worked on a web application which allowed users to manage active directory groups and users for the whole
+            technology department.
+            Actively participated in engineering practices such as code reviews, environment strategy and managing
+            CI/CD workflows.
+            Collaborated with multiple teams through out the internship to develop the group and personal project
+          </p>
+        </div>
+        <div class="list_work_experiences">
+          <div class="work_experience" onclick="webworld_website()">
             <b>
               <p>
-                Infrastructure Engineer •  SIG
+                System Administrator • Web World Ireland
               </p>
+              <img src="web-world.png">
             </b>
             <p>
-              January 2023 - September 2023
+              March 2018 - January 2023 <br> September 2023 - Present
             </p>
             <p>
-              Developed an automated roll call system for daily calls as a part of a group project which saved over 60 hours
-              a week for the infrastructure department.
-              Worked on a web application which allowed users to manage active directory groups and users for the whole
-              technology department.
-              Actively participated in engineering practices such as code reviews, environment strategy and managing
-              CI/CD workflows.
-              Collaborated with multiple teams through  out the internship to develop the group and personal project
+              Advised level 2 and level 3 engineers on potential process improvements to increase support quality and
+              expedite ticket fulfilment. Configured hardware, devices and software to be set up for employees and
+              clients. In charge of organizing small to medium scale jobs which help the efficiency and performance of
+              the
+              company. Documented all ticket resolutions and drafted troubleshooting guides for each team with images,
+              descriptions
+              and strategies. Managed work tickets, prioritizing urgent needs and communicating plans with all customers
+              within 24 hours
             </p>
           </div>
-          <div class="list_work_experiences">
-            <div class="work_experience" onclick="webworld_website()">
-              <b>
-                <p>
-                  System Administrator • Web World Ireland
-                </p>
-              </b>
-              <p>
-                March 2018 - January 2023 <br> September 2023 - Present
-              </p>
-              <p>
-                Advised level 2 and level 3 engineers on potential process improvements to increase support quality and
-                expedite ticket fulfilment. Configured hardware, devices and software to be set up for employees and clients. In charge of organizing small to medium scale jobs which help the efficiency and performance of the
-                company. Documented all ticket resolutions and drafted troubleshooting guides for each team with images, descriptions
-                and strategies. Managed work tickets, prioritizing urgent needs and communicating plans with all customers within 24 hours
-              </p>
-            </div>
+        </div>
       </div>
-      <center><h4><u>Projects</u></h4></center>
-      <br>
-      <div class="list_work_experiences">
-        <div class="work_experience" onclick="email_setting_website()">
+      <div id="projects" class=" section">
+        <center>
+          <h4><u>Projects</u></h4>
+        </center>
+        <br>
+        <div class="projects" onclick="email_setting_website()" id="projects">
           <b>
             <p>
               Email Setting Finder 📧
             </p>
           </b>
           <p>
-            Developed this web application while working for Web World Ireland, as we have a huge amount of clients, 
+            Developed this web application while working for Web World Ireland, as we have a huge amount of clients,
             I wanted to automate the process of finding email settings for clients. A user can enter the website
-             and put their email address in to return correct email settings.
+            and put their email address in to return correct email settings.
           </p>
           <h5>
             <span class="badge bg-success">Flask</span>
@@ -163,36 +200,40 @@
             <span class="badge bg-success">API</span>
           </h5>
         </div>
-        <div class="work_experience" onclick="status_page_website()">
+        <div class="projects" onclick="status_page_website()">
           <b>
             <p>
               Network Status Website (WIP) 🛜
             </p>
           </b>
           <p>
-            Built a network status page for Web World Ireland which is hosted on Heroku and independent from our data centre to
-            ensure uptime in the unlikely case of down time. It checks each of our servers, checking HTTP, POP3, FTP and uptime. The 
+            Built a network status page for Web World Ireland which is hosted on Heroku and independent from our data
+            centre to
+            ensure uptime in the unlikely case of down time. It checks each of our servers, checking HTTP, POP3, FTP
+            and uptime. The
             website refreshes every 30 seconds with newest updates.
           </p>
           <h5>
             <span class="badge bg-success">Flask</span>
             <span class="badge bg-success">Heroku</span>
-            <span class="badge bg-success">cPanel</span>           
+            <span class="badge bg-success">cPanel</span>
             <span class="badge bg-success">Redis</span>
             <span class="badge bg-success">Python</span>
             <span class="badge bg-success">API</span>
           </h5>
         </div>
-        <div class="work_experience" onclick="django_website()">
+        <div class="projects" onclick="django_website()">
           <b>
-            <p>
+            <p> <!---->
               Hotel Booking Website 🏨
             </p>
           </b>
           <p>
-            Hotel booking website built in Django framework. This project was developed as a part of our curriculum in second year and wanted us to demonstrate
-             the knowledge we gained about Django. We decided to take a challenge with setting up a booking system as that aspect was never showed to us and we were 
-             confident we would be able to implement it.
+            Hotel booking website built in Django framework. This project was developed as a part of our curriculum in
+            second year and wanted us to demonstrate
+            the knowledge we gained about Django. We decided to take a challenge with setting up a booking system as
+            that aspect was never showed to us and we were
+            confident we would be able to implement it.
           </p>
           <h5>
             <span class="badge bg-success">Django</span>
@@ -201,66 +242,14 @@
             <span class="badge bg-success">MySQL</span>
           </h5>
         </div>
-    </div>
+      </div>
     </div>
   </div>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous">
-  </script>
-  <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-    // Add a class to the button when it is clicked
-    btn.onclick = function() {
-      btn.classList.add("active");
-      modal.style.display = "block";
-    }
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on <span> (x), close the modal and remove the active class
-    span.onclick = function() {
-      btn.classList.remove("active");
-      modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it and remove the active class
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        btn.classList.remove("active");
-        modal.style.display = "none";
-      }
-    }
-
-    function sig_website(i){
-      window.open("https://www.sig.com/")
-    }
-
-    function webworld_website(i){
-      window.open("https://webworld.host/")
-    }
-
-    function email_setting_website(i){
-      window.open("https://help.webworld.ie/")
-    }
-
-    function status_page_website(i){
-      window.open("http://status.webworld.ie/")
-    }
-
-    function django_website(i){
-      window.open("https://github.com/maxwitalec01/CA2")
-    }
-
-  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+      </script>
+      <script src="script.js"></script>
 </body>
 
 </html>
