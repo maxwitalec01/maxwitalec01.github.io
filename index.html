@@ -2,254 +2,303 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=<h>, initial-scale=1.0">
-  <title>Max Witalec || Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Witalec || Portfolio</title>
+    <!--LINK CSS -->
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
 
-  <!--LINK CSS -->
-  <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <!--LINK BOOTSTRAP 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-  <!--LINK BOOTSTRAP 5.3 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--LINK GOOGLEFONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 
-  <!--LINK GOOGLEFONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-
-  <!--BOXBOX-->
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
+    <!--BOXBOX-->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 
 <body>
-  <div>
+    <div class="container-fluid">
+        <div class="row">
+            <!--LEFT SIDE-->
+            <div id="left" class="col-6 position-fixed vh-100 overflow-auto">
+                <img src="profile_pic.jpg" width=25% style="border-radius: 80%;">
+                <br><br>
 
-    <div class="left">
-      <img src="profile_pic.jpg" width=25% style="border-radius: 80%;">
-      <br><br>
-
-      <h2>Max Witalec</h2>
-      <h3>Software Developer</h3>
-      <br>
-      <H4>Hello!👋 <br>I'm Max Witalec, a junior software developer focused on building next level applications</h4>
-      <br>
-      <div>
-
-        <nav class="navbar ">
-
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#" onclick="toggleVisibility('about_me')"><button>About Me</button> </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" onclick="toggleVisibility('work_experience')"><button>Work Experience</button></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" onclick="toggleVisibility('projects')"><button>Projects</button></a>
-              </li>
-            </ul>
-
-        </nav>
-        
-        <button class="contact-button" id="myBtn" type="button">
-          Contact me here!
-        </button>
-        <div id="myModal" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <center>
-              <h3>Contact me!</h3>
-              <br>
-              <form>
-                <div class="row">
-                  <div class="col">
-                    <input type="text" class="form-control" placeholder="Name" aria-label="First name">
-                  </div>
-                  <div class="col">
-                    <input type="text" class="form-control" placeholder="Email Address" aria-label="Last name">
-                  </div>
-                </div>
+                <h2>Max Witalec</h2>
+                <h3>Software Developer</h3>
                 <br>
-                <div class="form-group">
-                  <textarea class="form-control" placeholder="Put your message here! :)" rows="3"></textarea>
-                </div>
+                <H4>Hello!👋
+                    <br>
+                    I'm Max Witalec, a junior software developer focused on building next level applications
+                </h4>
                 <br>
-                <button class="contact-button" id="submit-btn" type="button">
-                  Submit!
-                </button>
-              </form>
-            </center>
-          </div>
-        </div>
-      </div>
+                <nav class="navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about_me" onclick="toggleVisibility('about_me')"><button
+                                    class="contact-button">About Me</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work_experience" onclick="toggleVisibility('work_experience')"><button
+                                    class="contact-button">Work Experience</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects" onclick="toggleVisibility('projects')"><button
+                                    class="contact-button">Projects</button></a>
+                        </li>
+                    </ul>
+                </nav>
 
-      <div class="bottom-navbar justify-content-between">
-        <a href="https://github.com/maxwitalec01" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"
-            style="fill: rgba(169, 204, 200, 1)">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z">
-              <a href="#">
-            </path>
-          </svg>
-        </a>
-        <a href="https://www.linkedin.com/in/maxwitalec/" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"
-            style="fill: rgba(169, 204, 200, 1)">
-            <path
-              d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
-            </path>
-          </svg>
-        </a>
-      </div>
+
+                <div class="bottom-navbar justify-content-between">
+                    <a href="https://github.com/maxwitalec01" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"
+                            style="fill: rgba(169, 204, 200, 1)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z">
+                                <a href="#">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/maxwitalec/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"
+                            style="fill: rgba(169, 204, 200, 1)">
+                            <path
+                                d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg id="mySvgIcon" xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                            viewBox="0 0 24 24" style="fill: rgba(169, 204, 200, 1)">
+                            <path
+                                d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z">
+                            </path>
+                        </svg>
+                    </a>
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <center>
+                                <h3>Contact me!</h3>
+                                <br>
+                                <form>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Name"
+                                                aria-label="First name">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Email Address"
+                                                aria-label="Last name">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Put your message here! :)"
+                                            rows="3"></textarea>
+                                    </div>
+                                    <br>
+                                    <button class="contact-button" id="submit-btn" type="button">
+                                        Submit!
+                                    </button>
+                                </form>
+                                <br>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <b>
+                                            <p>Email Address: <br><a
+                                                    href="mailto:mwitalec01@gmail.com">mwitalec01@gmail.com</a></p>
+                                        </b>
+                                    </div>
+                                    <div class="col-6">
+                                        <b>
+                                            <p>Phone Number: <br>+353 87 388 342</p>
+                                        </b>
+                                    </div>
+                                </div>
+                                <br>
+                                <div style="width: 100%; "><iframe width="100%" height="350" frameborder="1"
+                                        scrolling="no" marginheight="0" marginwidth="0"
+                                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=TUD%20Tallaght+(Maksymilian%20Witalec)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                                        href="https://www.maps.ie/population/">Find Population on Map</a></iframe>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--LEFT SIDE ENDS-->
+
+            <!--RIGHT SIDE-->
+            <div id="right" class="col-6 offset-6 vh-100">
+                <div id="about_me" class="about_me section">
+                    <center>
+                        <h4><u>About Me</u></h4>
+                    </center>
+                    <br>
+                    <p class="intro">
+                        In 2018, I delved into software engineering, contributing to impactful projects and roles.
+                        Currently a System Administrator at <u>Web World Ireland</u>, I've improved support quality and
+                        managed
+                        efficiency-boosting projects. As an Infrastructure Engineer Intern at <u>Susquehanna
+                            International Group</u>,
+                        I worked on the development of a time-saving automated
+                        roll call system and worked on a web app for active directory management.
+                        <BR><BR>
+                        Beyond coding, I'm passionate about Formula 1, music production, and go karting. I look forward
+                        to future
+                        challenges and contributions in the dynamic world of software engineering.
+                    </p>
+                </div>
+
+                <div id="work_experience" class="list_work_experiences section">
+
+                    <center>
+                        <h4><u>Work Experience</u></h4>
+                    </center>
+                    <br>
+                    <div class="work_experience" onclick="sig_website()">
+
+                        <b>
+                            <p>
+                                Infrastructure Engineer • SIG
+                            </p>
+                        </b>
+                        <p>
+                            January 2023 - September 2023
+                        </p>
+                        <p>
+                            Developed an automated roll call system for daily calls as a part of a group project which
+                            saved over 60
+                            hours
+                            a week for the infrastructure department.
+                            Worked on a web application which allowed users to manage active directory groups and users
+                            for the whole
+                            technology department.
+                            Actively participated in engineering practices such as code reviews, environment strategy
+                            and managing
+                            CI/CD workflows.
+                            Collaborated with multiple teams through out the internship to develop the group and
+                            personal project
+                        </p>
+                    </div>
+                    <div class="list_work_experiences">
+                        <div class="work_experience" onclick="webworld_website()">
+                            <b>
+                                <p>
+                                    System Administrator • Web World Ireland
+                                </p>
+                            </b>
+                            <p>
+                                March 2018 - January 2023 <br> September 2023 - Present
+                            </p>
+                            <p>
+                                Advised level 2 and level 3 engineers on potential process improvements to increase
+                                support quality and
+                                expedite ticket fulfilment. Configured hardware, devices and software to be set up for
+                                employees and
+                                clients. In charge of organizing small to medium scale jobs which help the efficiency
+                                and performance of
+                                the
+                                company. Documented all ticket resolutions and drafted troubleshooting guides for each
+                                team with images,
+                                descriptions
+                                and strategies. Managed work tickets, prioritizing urgent needs and communicating plans
+                                with all customers
+                                within 24 hours
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="projects" class=" section">
+                    <center>
+                        <h4><u>Projects</u></h4>
+                    </center>
+                    <br>
+                    <div class="projects" onclick="email_setting_website()" id="projects">
+                        <b>
+                            <p>
+                                Email Setting Finder <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 24" style="fill: rgba(169, 204, 200, 1)"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"></path></svg>
+                            </p>
+                        </b>
+                        <p>
+                            Developed this web application while working for Web World Ireland, as we have a huge amount
+                            of clients,
+                            I wanted to automate the process of finding email settings for clients. A user can enter the
+                            website
+                            and put their email address in to return correct email settings.
+                        </p>
+                        <h5>
+                            <span class="badge bg-success">Flask</span>
+                            <span class="badge bg-success">cPanel</span>
+                            <span class="badge bg-success">Python</span>
+                            <span class="badge bg-success">API</span>
+                        </h5>
+                    </div>
+                    <div class="projects" onclick="status_page_website()">
+                        <b>
+                            <p>
+                                Network Status Website (WIP) <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 24" style="fill: rgba(169, 204, 200, 1)"><path d="M20 3H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-5 5h-2V6h2zm4 0h-2V6h2zm1 5H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2zm-5 5h-2v-2h2zm4 0h-2v-2h2z"></path></svg>
+                            </p>
+                        </b>
+                        <p>
+                            Built a network status page for Web World Ireland which is hosted on Heroku and independent
+                            from our data
+                            centre to
+                            ensure uptime in the unlikely case of down time. It checks each of our servers, checking
+                            HTTP, POP3, FTP
+                            and uptime. The
+                            website refreshes every 30 seconds with newest updates.
+                        </p>
+                        <h5>
+                            <span class="badge bg-success">Flask</span>
+                            <span class="badge bg-success">Heroku</span>
+                            <span class="badge bg-success">cPanel</span>
+                            <span class="badge bg-success">Redis</span>
+                            <span class="badge bg-success">Python</span>
+                            <span class="badge bg-success">API</span>
+                        </h5>
+                    </div>
+                    <div class="projects" onclick="django_website()">
+                        <b>
+                            <p> 
+                                Hotel Booking Website <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 24" style="fill: rgba(169, 204, 200, 1)"><circle cx="8" cy="11" r="3"></circle><path d="M18.205 7H12v8H4V6H2v14h2v-3h16v3h2v-4c0-.009-.005-.016-.005-.024H22V11c0-2.096-1.698-4-3.795-4z"></path></svg>
+                            </p>
+                        </b>
+                        <p>
+                            Hotel booking website built in Django framework. This project was developed as a part of our
+                            curriculum in
+                            second year and wanted us to demonstrate
+                            the knowledge we gained about Django. We decided to take a challenge with setting up a
+                            booking system as
+                            that aspect was never showed to us and we were
+                            confident we would be able to implement it.
+                        </p>
+                        <h5>
+                            <span class="badge bg-success">Django</span>
+                            <span class="badge bg-success">Python</span>
+                            <span class="badge bg-success">API</span>
+                            <span class="badge bg-success">MySQL</span>
+                        </h5>
+                    </div>
+                </div>
+
+            </div>
+            <!--RIGHT SIDE ENDS-->
+        </div>
     </div>
-
-    <div class="right">
-        <div id="about_me" class="about_me section ">
-          <center>
-            <h4><u>About Me</u></h4>
-          </center>
-          <br>
-          <p class="intro">
-            In 2018, I delved into software engineering, contributing to impactful projects and roles.
-            Currently a System Administrator at <u>Web World Ireland</u>, I've improved support quality and managed
-            efficiency-boosting projects. As an Infrastructure Engineer Intern at <u>Susquehanna International Group</u>,
-            I worked on the development of a time-saving automated
-            roll call system and worked on a web app for active directory management.
-            <BR><BR>
-            Beyond coding, I'm passionate about Formula 1, music production, and go karting. I look forward to future
-            challenges and contributions in the dynamic world of software engineering.
-          </p>
-        </div>
-
-
-      <div id="work_experience" class="list_work_experiences section">
-
-        <center>
-          <h4><u>Work Experience</u></h4>
-        </center>
-        <br>
-        <div class="work_experience" onclick="sig_website()">
-
-          <b>
-            <p>
-              Infrastructure Engineer • SIG <img src="favicon.ico" style="width: 16px; height: 16px;">
-            </p>
-          </b>
-          <p>
-            January 2023 - September 2023
-          </p>
-          <p>
-            Developed an automated roll call system for daily calls as a part of a group project which saved over 60
-            hours
-            a week for the infrastructure department.
-            Worked on a web application which allowed users to manage active directory groups and users for the whole
-            technology department.
-            Actively participated in engineering practices such as code reviews, environment strategy and managing
-            CI/CD workflows.
-            Collaborated with multiple teams through out the internship to develop the group and personal project
-          </p>
-        </div>
-        <div class="list_work_experiences">
-          <div class="work_experience" onclick="webworld_website()">
-            <b>
-              <p>
-                System Administrator • Web World Ireland
-              </p>
-              <img src="web-world.png">
-            </b>
-            <p>
-              March 2018 - January 2023 <br> September 2023 - Present
-            </p>
-            <p>
-              Advised level 2 and level 3 engineers on potential process improvements to increase support quality and
-              expedite ticket fulfilment. Configured hardware, devices and software to be set up for employees and
-              clients. In charge of organizing small to medium scale jobs which help the efficiency and performance of
-              the
-              company. Documented all ticket resolutions and drafted troubleshooting guides for each team with images,
-              descriptions
-              and strategies. Managed work tickets, prioritizing urgent needs and communicating plans with all customers
-              within 24 hours
-            </p>
-          </div>
-        </div>
-      </div>
-      <div id="projects" class=" section">
-        <center>
-          <h4><u>Projects</u></h4>
-        </center>
-        <br>
-        <div class="projects" onclick="email_setting_website()" id="projects">
-          <b>
-            <p>
-              Email Setting Finder 📧
-            </p>
-          </b>
-          <p>
-            Developed this web application while working for Web World Ireland, as we have a huge amount of clients,
-            I wanted to automate the process of finding email settings for clients. A user can enter the website
-            and put their email address in to return correct email settings.
-          </p>
-          <h5>
-            <span class="badge bg-success">Flask</span>
-            <span class="badge bg-success">cPanel</span>
-            <span class="badge bg-success">Python</span>
-            <span class="badge bg-success">API</span>
-          </h5>
-        </div>
-        <div class="projects" onclick="status_page_website()">
-          <b>
-            <p>
-              Network Status Website (WIP) 🛜
-            </p>
-          </b>
-          <p>
-            Built a network status page for Web World Ireland which is hosted on Heroku and independent from our data
-            centre to
-            ensure uptime in the unlikely case of down time. It checks each of our servers, checking HTTP, POP3, FTP
-            and uptime. The
-            website refreshes every 30 seconds with newest updates.
-          </p>
-          <h5>
-            <span class="badge bg-success">Flask</span>
-            <span class="badge bg-success">Heroku</span>
-            <span class="badge bg-success">cPanel</span>
-            <span class="badge bg-success">Redis</span>
-            <span class="badge bg-success">Python</span>
-            <span class="badge bg-success">API</span>
-          </h5>
-        </div>
-        <div class="projects" onclick="django_website()">
-          <b>
-            <p> <!---->
-              Hotel Booking Website 🏨
-            </p>
-          </b>
-          <p>
-            Hotel booking website built in Django framework. This project was developed as a part of our curriculum in
-            second year and wanted us to demonstrate
-            the knowledge we gained about Django. We decided to take a challenge with setting up a booking system as
-            that aspect was never showed to us and we were
-            confident we would be able to implement it.
-          </p>
-          <h5>
-            <span class="badge bg-success">Django</span>
-            <span class="badge bg-success">Python</span>
-            <span class="badge bg-success">API</span>
-            <span class="badge bg-success">MySQL</span>
-          </h5>
-        </div>
-      </div>
-    </div>
-  </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-      </script>
-      <script src="script.js"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

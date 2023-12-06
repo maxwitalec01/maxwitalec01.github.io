@@ -1,69 +1,57 @@
-      // Get the modal
-      var modal = document.getElementById("myModal");
+var modal = document.getElementById("myModal");
+var svgIcon = document.getElementById("mySvgIcon");
+var span = document.getElementsByClassName("close")[0];
 
-      // Get the button that opens the modal
-      var btn = document.getElementById("myBtn");
+// Open modal when SVG icon is clicked
+svgIcon.onclick = function () {
+  modal.style.display = "block";
+}
 
-      // Add a class to the button when it is clicked
-      btn.onclick = function () {
-        btn.classList.add("active");
-        modal.style.display = "block";
-      }
+// Close modal and remove active class when close button is clicked
+span.onclick = function () {
+  modal.style.display = "none";
+}
 
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
+// Close modal and remove active class when clicking outside the modal
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
-      // When the user clicks on <span> (x), close the modal and remove the active class
-      span.onclick = function () {
-        btn.classList.remove("active");
-        modal.style.display = "none";
-      }
+function sig_website(i) {
+  window.open("https://www.sig.com/")
+}
 
-      // When the user clicks anywhere outside of the modal, close it and remove the active class
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          btn.classList.remove("active");
-          modal.style.display = "none";
-        }
-      }
+function webworld_website(i) {
+  window.open("https://webworld.host/")
+}
 
-      function sig_website(i) {
-        window.open("https://www.sig.com/")
-      }
+function email_setting_website(i) {
+  window.open("https://help.webworld.ie/")
+}
 
-      function webworld_website(i) {
-        window.open("https://webworld.host/")
-      }
+function status_page_website(i) {
+  window.open("http://status.webworld.ie/")
+}
 
-      function email_setting_website(i) {
-        window.open("https://help.webworld.ie/")
-      }
+function django_website(i) {
+  window.open("https://github.com/maxwitalec01/CA2")
+}
 
-      function status_page_website(i) {
-        window.open("http://status.webworld.ie/")
-      }
+// Get references to the div elements
+var aboutMeDiv = document.getElementById("about_me");
+var workExperienceDiv = document.getElementById("work_experience");
+var projectsDiv = document.getElementById("projects");
+// console.log(projectsDiv)
 
-      function django_website(i) {
-        window.open("https://github.com/maxwitalec01/CA2")
-      }
-
-      // Get references to the div elements
-      var aboutMeDiv = document.getElementById("about_me");
-      var workExperienceDiv = document.getElementById("work_experience");
-      var projectsDiv = document.getElementById("projects");
-      console.log(projectsDiv)
-
-      // Initialize the divs to be hidden except for the first one
-      aboutMeDiv.style.display = "block";
-      workExperienceDiv.style.display = "none";
-      projectsDiv.style.display = "none";
+// Initialize the divs to be hidden except for the first one
+aboutMeDiv.style.display = "block";
+workExperienceDiv.style.display = "none";
+projectsDiv.style.display = "none";
 
 
-
-
-
-      
-      function toggleVisibility(elementId) {
+function toggleVisibility(elementId) {
   console.log('Toggle visibility for:', elementId);
 
   // Get references to the div elements
@@ -96,9 +84,9 @@
     const selectedSection = document.getElementById(elementId);
     selectedSection.style.display = 'block';
     selectedSection.classList.add('fade-in');
-  }, 1000); // Adjust the timeout duration to match the animation duration
+  }, 999); // Adjusted the timeout duration to not glitch with the fade out
 
   // Log the visibility status
   console.log('Visibility status:', elementId, 'display: block');
 }
-  
+
