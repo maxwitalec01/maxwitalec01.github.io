@@ -235,6 +235,7 @@ a {
     padding: 2.8rem 0 0 0 !important; /* Adjusted padding */
     margin: 0 !important; /* Reset margin */
     margin-bottom:  50vh;
+    height: 100% !important;
     float: none;
   }
 
