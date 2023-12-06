@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Max Witalec || Portfolio</title>
     <!--LINK CSS -->
     <link rel="stylesheet" type="text/css" href="style/style.css" />
@@ -44,8 +44,9 @@
                                     class="contact-button">About Me</button></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#work_experience" onclick="toggleVisibility('work_experience')"><button
-                                    class="contact-button">Work Experience</button></a>
+                            <a class="nav-link" href="#work_experience"
+                                onclick="toggleVisibility('work_experience')"><button class="contact-button">Work
+                                    Experience</button></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#projects" onclick="toggleVisibility('projects')"><button
@@ -127,7 +128,7 @@
                                 <div style="width: 100%; "><iframe width="100%" height="350" frameborder="1"
                                         scrolling="no" marginheight="0" marginwidth="0"
                                         src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=TUD%20Tallaght+(Maksymilian%20Witalec)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-                                        href="https://www.maps.ie/population/">Find Population on Map</a></iframe>
+                                            href="https://www.maps.ie/population/">Find Population on Map</a></iframe>
                                 </div>
                             </center>
                         </div>
@@ -222,12 +223,43 @@
                         <h4><u>Projects</u></h4>
                     </center>
                     <br>
-                    <div class="projects" onclick="email_setting_website()" id="projects">
+
+                    <!--EMAIL SETTING FINDER PROJECT-->
+                    <div class="projects" id="email_setting_finder" data-bs-toggle="popover" data-bs-placement="left">
                         <b>
                             <p>
-                                Email Setting Finder <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 24" style="fill: rgba(169, 204, 200, 1)"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"></path></svg>
+                                Email Setting Finder <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28"
+                                    viewBox="0 0 24 24" style="fill: rgba(169, 204, 200, 1)">
+                                    <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2
+                                 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 
+                                4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z">
+                                    </path>
+                                </svg>
                             </p>
                         </b>
+                        <!-- Custom content div 1  -->
+                        <div id="email_setting_finder_content" class="d-none">
+                            <div class="custom-popover-content" style="text-align: center;">
+                                <!-- Add your custom content here -->
+                                <h4 style="text-align: center;">Email Setting Finder</h4>
+                                <p>Project Developed for: Web World Ireland</p>
+                                <p>
+                                    This was my first project developed for Web World Ireland, as there is a lot of
+                                    customer calls
+                                    asking for their email settings, I thought of an idea which would automate this
+                                    process for the
+                                    users and all they would have to do was just type their email into the website to
+                                    retrieve their
+                                    settings from the server.
+                                    <br>
+
+                                    <br>
+                                <p>View it in action below.</p>
+                                <a class="btn btn-success" href="https://help.webworld.ie/" target="_blank">Click
+                                    here!</a>
+                                </p>
+                            </div>
+                        </div>
                         <p>
                             Developed this web application while working for Web World Ireland, as we have a huge amount
                             of clients,
@@ -242,12 +274,46 @@
                             <span class="badge bg-success">API</span>
                         </h5>
                     </div>
-                    <div class="projects" onclick="status_page_website()">
+
+                    <!--EMAIL SETTING FINDER PROJECT ENDS-->
+
+                    <!--NETWORK STATUS PAGE PROJECT-->
+                    <div class="projects" id="network_status_page" data-bs-toggle="popover" data-bs-placement="left">
                         <b>
                             <p>
-                                Network Status Website (WIP) <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 24" style="fill: rgba(169, 204, 200, 1)"><path d="M20 3H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-5 5h-2V6h2zm4 0h-2V6h2zm1 5H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2zm-5 5h-2v-2h2zm4 0h-2v-2h2z"></path></svg>
+                                Network Status Website (WIP) <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="28" viewBox="0 0 24 24" style="fill: rgba(169, 204, 200, 1)">
+                                    <path
+                                        d="M20 3H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-5 5h-2V6h2zm4 0h-2V6h2zm1 5H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2zm-5 5h-2v-2h2zm4 0h-2v-2h2z">
+                                    </path>
+                                </svg>
                             </p>
                         </b>
+                        <!-- Custom content div 2  -->
+                        <div id="network_status_page_content" class="d-none">
+                            <div class="custom-popover-content" style="text-align: center;">
+                                <!-- Add your custom content here -->
+                                <h4 style="text-align: center;">Network Status Page</h4>
+                                <p>Project Developed for: Web World Ireland</p>
+                                <p>
+                                    This was my second project developed for Web World Ireland, my manager asked if it's
+                                    possible
+                                    to develop a network page which checks HTTP, FTP, IMAP, POP3 and Uptime percentage
+                                    constantly.
+                                    The biggest factor to this was to have it hosted outside our network in the case of
+                                    downtime, I decided
+                                    to host it on Heroku. There is a Heroku Scheduler running every minute which
+                                    triggers a function
+                                    to check each servers status.
+                                    <br>
+
+                                    <br>
+                                <p>View it in action below.</p>
+                                <a class="btn btn-success" href="http://status.webworld.ie/" target="_blank">Click
+                                    here!</a>
+                                </p>
+                            </div>
+                        </div>
                         <p>
                             Built a network status page for Web World Ireland which is hosted on Heroku and independent
                             from our data
@@ -266,12 +332,41 @@
                             <span class="badge bg-success">API</span>
                         </h5>
                     </div>
-                    <div class="projects" onclick="django_website()">
+                    <!--NETWORK STATUS PAGE PROJECT ENDS-->
+
+                    <!--HOTEL BOOKING WEBSITE PROJECT-->
+                    <div class="projects" id="hotel_booking" data-bs-toggle="popover" data-bs-placement="left">
                         <b>
-                            <p> 
-                                Hotel Booking Website <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 24" style="fill: rgba(169, 204, 200, 1)"><circle cx="8" cy="11" r="3"></circle><path d="M18.205 7H12v8H4V6H2v14h2v-3h16v3h2v-4c0-.009-.005-.016-.005-.024H22V11c0-2.096-1.698-4-3.795-4z"></path></svg>
+                            <p>
+                                Hotel Booking Website <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28"
+                                    viewBox="0 0 24 24" style="fill: rgba(169, 204, 200, 1)">
+                                    <circle cx="8" cy="11" r="3"></circle>
+                                    <path
+                                        d="M18.205 7H12v8H4V6H2v14h2v-3h16v3h2v-4c0-.009-.005-.016-.005-.024H22V11c0-2.096-1.698-4-3.795-4z">
+                                    </path>
+                                </svg>
                             </p>
                         </b>
+
+                        <!-- Custom content div 3  -->
+                        <div id="hotel_booking_content" class="d-none">
+                            <div class="custom-popover-content" style="text-align: center;">
+                                <!-- Add your custom content here -->
+                                <h4 style="text-align: center;">Hotel Booking Website</h4>
+                                <p>Project Developed for: College Project</p>
+                                <p>
+                                    This was one of our first complex group projects we
+                                    had to do through out our degree. We were asked to develop
+                                    a django website which holds certain requirements.
+                                    We adopted a booking system for a hotel where the admin can book rooms, see availability etc.
+                                    <br>
+
+                                <p>You can view the repo here:</p>
+                                <a class="btn btn-success" href="https://github.com/maxwitalec01/CA2" target="_blank">Click
+                                    here!</a>
+                                </p>
+                            </div>
+                        </div>
                         <p>
                             Hotel booking website built in Django framework. This project was developed as a part of our
                             curriculum in
@@ -288,6 +383,7 @@
                             <span class="badge bg-success">MySQL</span>
                         </h5>
                     </div>
+                    <!--HOTEL BOOKING WEBSITE PROJECT ENDS-->
                 </div>
 
             </div>

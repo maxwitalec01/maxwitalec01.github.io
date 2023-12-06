@@ -27,17 +27,7 @@ function webworld_website(i) {
   window.open("https://webworld.host/")
 }
 
-function email_setting_website(i) {
-  window.open("https://help.webworld.ie/")
-}
 
-function status_page_website(i) {
-  window.open("http://status.webworld.ie/")
-}
-
-function django_website(i) {
-  window.open("https://github.com/maxwitalec01/CA2")
-}
 
 // Get references to the div elements
 var aboutMeDiv = document.getElementById("about_me");
@@ -89,4 +79,32 @@ function toggleVisibility(elementId) {
   // Log the visibility status
   console.log('Visibility status:', elementId, 'display: block');
 }
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  var popover1 = new bootstrap.Popover(document.getElementById('email_setting_finder'), {
+    content: function () {
+      return document.getElementById('email_setting_finder_content').innerHTML;
+    },
+    html: true,
+    placement: window.innerWidth <= 1024 ? 'top' : 'auto'
+  });
+
+  var popover2 = new bootstrap.Popover(document.getElementById('network_status_page'), {
+    content: function () {
+      return document.getElementById('network_status_page_content').innerHTML;
+    },
+    html: true,
+    placement: window.innerWidth <= 1024 ? 'top' : 'auto'
+  });
+
+  var popover3 = new bootstrap.Popover(document.getElementById('hotel_booking'), {
+    content: function () {
+      return document.getElementById('hotel_booking_content').innerHTML;
+    },
+    html: true,
+    placement: window.innerWidth <= 1024 ? 'top' : 'auto'
+  });
+});
 

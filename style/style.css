@@ -11,6 +11,7 @@ body {
     background-color: #03120e !important;
 }
 
+a,
 body p,
 h1,
 i,
@@ -37,9 +38,7 @@ h2 {
     position:fixed;
     bottom: 0;
 }
-.icon:hover {
-  fill: #DA4567;
-}
+
 
 .contact-button {
 
@@ -141,7 +140,7 @@ h2 {
   border-radius: 25px;
   transition-duration: 1s;
   margin: 0 auto; /* this is to center the div */
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   border: 2px solid #3b605a;
 
 }
@@ -197,76 +196,82 @@ a {
   animation: fadeOut 1s ease-in-out;
 }
 
+
+
+
+.popover{
+  max-width: 500px !important;
+  max-height: 500px !important;
+}
+
+
+.popover-body{
+  background-color: #26413C !important;
+  border: 2px solid #a9ccc8;
+}
+
+
 @media screen and (max-width: 1024px) {
-    body {
-      padding-top: 80px;
-    }
-  
-    #left,
-    #right {
-      width: 100%;
-      max-height: none; /* Remove max-height for mobile */
-      overflow-y: auto; /* Enable scrolling if content exceeds the height */
-      position: relative; /* Make both divs relative for proper stacking */
-      padding-left: 15px;
-      padding-right: 15px;
-      height: 100vh ;
-    }
-  
-    #right {
-      padding-right: 15px !important;
-      float: none; /* Remove float for proper stacking */
-    }
-  
-    .bottom-navbar {
-        text-align: center;
-      position: static;
-      margin-bottom: 0;
-      padding-top: 30px ;
-    }
-
-    .contact-button{
-        width: 100%;
-        margin: 0 auto;
-    }
-  
-    .modal-content {
-      width: 90% !important;
-    }
-  
-    .left {
-      padding-left: 15px;
-      padding-right: 15px;
-      position: relative; /* Set left div back to relative position */
-      top: 0; /* Remove top position for proper stacking */
-      z-index: 1; /* Ensure it appears on top of the right div */
-    }
-
-    .projects{
-      padding: 15px;
-      text-align: center;
-      width: 102%;
-      border-radius: 25px;
-      transition-duration: 1s;
-      margin: 0 auto; /* this is to center the div */
-      margin-bottom: 3%;
-      border: 2px solid #3b605a;
-    
-    }
-
-    .work_experience{
-      padding: 15px;
-      text-align: center;
-      width: 102%;
-      border-radius: 25px;
-      transition-duration: 1s;
-      margin: 0 auto; /* this is to center the div */
-      margin-bottom: 3%;
-      border: 2px solid #3b605a;
-  
+  body {
+    padding-top: 80px;
   }
 
+  #left,
+  #right {
+    width: 100%;
+    max-height: none;
+    overflow-y: auto;
+    position: relative;
+    box-sizing: border-box; /* Include padding in the total width */
+    height: auto; /* Change to auto for dynamic height */
   }
+
+  #left{
+    position: relative  !important;
+    padding: 2% !important;
+    height: 100% !important;
+  }
+  #right {
+    padding: 2.8rem 0 0 0 !important; /* Adjusted padding */
+    margin: 0 !important; /* Reset margin */
+    margin-bottom:  50vh;
+    float: none;
+  }
+
+  .bottom-navbar {
+    text-align: center;
+    position: static;
+    margin-bottom: 0;
+    padding-top: 30px;
+  }
+
+  .contact-button {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .modal-content {
+    width: 90% !important;
+  }
+
+  #left {
+    position: relative;
+    top: 0;
+    z-index: 1;
+  }
+
+  .projects,
+  .work_experience {
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    border-radius: 25px;
+    transition-duration: 1s;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    border: 2px solid #3b605a;
+  }
+}
 
   
 
