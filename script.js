@@ -33,12 +33,15 @@ function webworld_website(i) {
 var aboutMeDiv = document.getElementById("about_me");
 var workExperienceDiv = document.getElementById("work_experience");
 var projectsDiv = document.getElementById("projects");
+var educationDiv = document.getElementById("education");
 // console.log(projectsDiv)
 
 // Initialize the divs to be hidden except for the first one
 aboutMeDiv.style.display = "block";
 workExperienceDiv.style.display = "none";
 projectsDiv.style.display = "none";
+educationDiv.style.display = "none";
+
 
 
 function toggleVisibility(elementId) {
@@ -48,27 +51,32 @@ function toggleVisibility(elementId) {
   var aboutMeDiv = document.getElementById('about_me');
   var workExperienceDiv = document.getElementById('work_experience');
   var projectsDiv = document.getElementById('projects');
+  var educationDiv = document.getElementById('education')
 
   // Remove the fade-in class from all sections
   aboutMeDiv.classList.remove('fade-in');
   workExperienceDiv.classList.remove('fade-in');
   projectsDiv.classList.remove('fade-in');
+  educationDiv.classList.remove('fade-in');
 
   // Add the fade-out class to all sections
   aboutMeDiv.classList.add('fade-out');
   workExperienceDiv.classList.add('fade-out');
   projectsDiv.classList.add('fade-out');
+  educationDiv.classList.add('fade-out');
 
   // Hide all sections after the fade-out animation completes
   setTimeout(() => {
     aboutMeDiv.style.display = 'none';
     workExperienceDiv.style.display = 'none';
     projectsDiv.style.display = 'none';
+    educationDiv.style.display = 'none';
 
     // Remove the fade-out class
     aboutMeDiv.classList.remove('fade-out');
     workExperienceDiv.classList.remove('fade-out');
     projectsDiv.classList.remove('fade-out');
+    educationDiv.classList.remove('fade-out');
 
     // Show the selected section with fade-in effect
     const selectedSection = document.getElementById(elementId);
@@ -106,13 +114,14 @@ document.addEventListener('DOMContentLoaded', function () {
     html: true,
     placement: window.innerWidth <= 1024 ? 'top' : 'auto'
   });
+
 });
 
 
 
 document.addEventListener('DOMContentLoaded', function() {
   var currentYear = 1; 
-  var maxYear = 4; 
+  var maxYear = 3; 
   var isAnimating = false;
 
   var gradeData = {
@@ -160,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
 
-  var table = document.querySelector('.table');
+  var table = document.querySelector('.grade-table');
   var tableBody = table.querySelector('tbody');
   var yearDisplay = document.getElementById('yearDisplay');
 

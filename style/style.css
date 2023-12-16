@@ -17,6 +17,8 @@ h1,
 i,
 h3,
 h4,
+th,
+td,
 h2 {
     font-family: 'Roboto Mono', sans-serif ;
     color: #a9ccc8 !important;
@@ -209,6 +211,32 @@ a {
   background-color: #26413C !important;
   border: 2px solid #a9ccc8;
 }
+
+#gradesTable {
+  width: 100%;
+}
+
+.grade-table {
+  width: 100% !important;
+  border-collapse: collapse; 
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: #03120e; 
+}
+
+.grade-table th,
+.grade-table td {
+  text-align: left; 
+  padding: 8px 12px; 
+  border: 1px solid #a9ccc8; 
+  font-family: 'Roboto Mono', monospace;
+}
+
+.grade-table th {
+  font-family: 'Roboto Mono', monospace;
+}
+
+
 
 
 @media screen and (max-width: 1024px) {
