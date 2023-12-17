@@ -34,7 +34,7 @@ var aboutMeDiv = document.getElementById("about_me");
 var workExperienceDiv = document.getElementById("work_experience");
 var projectsDiv = document.getElementById("projects");
 var educationDiv = document.getElementById("education");
-// console.log(projectsDiv)
+
 
 // Initialize the divs to be hidden except for the first one
 aboutMeDiv.style.display = "block";
