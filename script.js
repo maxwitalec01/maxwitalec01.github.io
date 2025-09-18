@@ -53,6 +53,8 @@ function toggleVisibility(elementId) {
   var projectsDiv = document.getElementById('projects');
   var educationDiv = document.getElementById('education')
 
+
+
   // Remove the fade-in class from all sections
   aboutMeDiv.classList.remove('fade-in');
   workExperienceDiv.classList.remove('fade-in');
